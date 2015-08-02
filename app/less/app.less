@@ -1,0 +1,82 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:300);
+
+@purple:      rgb(147,39,143);
+@green:       rgb(81,191,70);
+@blue:        rgb(41,171,226);
+@orange:      rgb(225,147,30);
+@gray:        rgb(102,102,102);
+@transparent: transparent;
+@black:       black;
+@white:       white;
+
+@mainFont:    Futura;
+
+
+html, body {
+  width: 100%;
+  margin: 0 auto;
+  background-color: @orange;
+}
+
+#landingImage {
+  height: 500px;
+  background: url('../img/SBCS-cover.png') no-repeat top center;
+  background-size: cover;
+}
+
+#mission {
+  background-color: @white;
+  width: 44%;
+  margin: 0 auto;
+  float: left;
+  padding: 1% 3%;
+  font-family: 'Roboto Condensed', sans-serif;
+
+
+  #missionText {
+    float: left;
+
+    h1, h2 {
+      font-family: @mainFont;
+      margin: 0 auto;
+    }
+
+    h1 {
+      color: @purple;
+      font-size: 3em;
+    }
+
+    h2 {
+      color: @gray;
+      margin-bottom: 3%;
+    }
+
+    p {
+      margin: 0 auto;
+    }
+
+    strong {
+      color: @purple;
+    }
+
+  }
+
+  button.about {
+    width: 32%;
+    height: 50px;
+    margin: 3% 30%;
+    font-size: 2em;
+    font-family: Futura;
+    color: @purple;
+    background-color: @transparent;
+    border: 2px solid @purple;
+    -webkit-transition: all ease-in-out 0.25s; /* Safari */
+    transition: all ease-in-out 0.25s;
+  }
+
+  button.about:hover {
+    color: @white;
+    background-color: @purple;
+    border: 2px solid @purple;
+  }
+}
